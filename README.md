@@ -74,4 +74,4 @@ uv run pytest
 
 ## Credits
 
-The project structure follows Eddie Sharick's "Chess Engine in Python" YouTube series.
+This project is based on Eddie Sharick's "Chess Engine in Python" YouTube series. The original game and move generation code come from that series. The bug fixes, restructuring and tests were added on top of it, and new features are built from here.
