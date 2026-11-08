@@ -1,0 +1,24 @@
+[project]
+name = "chess-engine-project"
+version = "0.1.0"
+description = "A two-player chess game in Python and pygame, with legal move generation including checks and pins."
+readme = "README.md"
+authors = [{ name = "Sil Verheye" }]
+requires-python = ">=3.10"
+dependencies = ["pygame-ce>=2.5"]
+
+[project.scripts]
+chess = "chess_engine.gui:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chess_engine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
